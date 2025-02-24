@@ -14,7 +14,7 @@ dp = Dispatcher()
 async def start_cmd(message: types.Message):
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="Тест веб", web_app=WebAppInfo(url="https://pmkd.ru/"))]
+            [InlineKeyboardButton(text="Тест веб", web_app=WebAppInfo(url="https://deadmindx.github.io/test_app/"))]
         ]
     )
     await message.answer("Нажми на кнопку для теста Web App:", reply_markup=keyboard)

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя первая страница</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-    </style>
+    <title>Web App Test</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Это моя первая HTML-страничка.</p>
+    <h1>Тест Web App</h1>
+    <button onclick="sendData()">Отправить данные</button>
+
+    <script>
+        function sendData() {
+            Telegram.WebApp.sendData("Привет участинк!");
+        }
+    </script>
 </body>
 </html>
